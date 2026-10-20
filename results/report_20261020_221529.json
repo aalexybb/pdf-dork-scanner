@@ -1,0 +1,946 @@
+{
+  "domain": "olivella.cat",
+  "urls": [
+    "https://www.olivella.cat/media/repository/Mapa_Olivella_DinA4_07012026.pdf",
+    "https://www.olivella.cat/media/repository/directori/equipaments/deixalleries/calendari_deixalleria_mobil_olivella.pdf",
+    "https://www.olivella.cat/media/repository/municipi/Planol_Olivella.pdf",
+    "https://www.olivella.cat/media/repository/municipi/festes/20260729_Certificat_Certificat_d_acords_Certificat_d_acord__1_.pdf",
+    "https://www.olivella.cat/media/repository/noticies/2026/CARNAVAL_2026.pdf",
+    "https://www.olivella.cat/media/repository/noticies/2026/PROGRAMACIO%CC%81.pdf",
+    "https://www.olivella.cat/media/repository/noticies/2026/programa.pdf",
+    "https://www.olivella.cat/media/repository/noticies/Juliol_2024/Programa_de_la_Festa_Majors_d_Olivella_2024.pdf"
+  ],
+  "downloaded": [
+    {
+      "url": "https://www.olivella.cat/media/repository/Mapa_Olivella_DinA4_07012026.pdf",
+      "path": "/home/alex/pdf-dork-scanner/results/pdfs/Mapa_Olivella_DinA4_07012026_c3408507b98b.pdf"
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/directori/equipaments/deixalleries/calendari_deixalleria_mobil_olivella.pdf",
+      "path": "/home/alex/pdf-dork-scanner/results/pdfs/calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf"
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/municipi/Planol_Olivella.pdf",
+      "path": "/home/alex/pdf-dork-scanner/results/pdfs/Planol_Olivella_82787d6019db.pdf"
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/municipi/festes/20260729_Certificat_Certificat_d_acords_Certificat_d_acord__1_.pdf",
+      "path": "/home/alex/pdf-dork-scanner/results/pdfs/20260729_Certificat_Certificat_d_acords_Certificat_d_acord__1__6394b950e07c.pdf"
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/noticies/2026/CARNAVAL_2026.pdf",
+      "path": "/home/alex/pdf-dork-scanner/results/pdfs/CARNAVAL_2026_d468e50682be.pdf"
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/noticies/2026/PROGRAMACIO%CC%81.pdf",
+      "path": "/home/alex/pdf-dork-scanner/results/pdfs/PROGRAMACIO_CC_81_84f63643c23a.pdf"
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/noticies/2026/programa.pdf",
+      "path": "/home/alex/pdf-dork-scanner/results/pdfs/programa_640de8f305fb.pdf"
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/noticies/Juliol_2024/Programa_de_la_Festa_Majors_d_Olivella_2024.pdf",
+      "path": "/home/alex/pdf-dork-scanner/results/pdfs/Programa_de_la_Festa_Majors_d_Olivella_2024_440b53be2f55.pdf"
+    }
+  ],
+  "failed": [],
+  "findings": [
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/CARNAVAL_2026_d468e50682be.pdf",
+      "category": "metadata",
+      "severity": "high",
+      "field": "PDF.Author",
+      "value": "ISABEL CANO",
+      "reason": "Campo sensible 'Author' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/PROGRAMACIO_CC_81_84f63643c23a.pdf",
+      "category": "metadata",
+      "severity": "high",
+      "field": "PDF.Author",
+      "value": "Màrius Montmany",
+      "reason": "Campo sensible 'Author' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Planol_Olivella_82787d6019db.pdf",
+      "category": "metadata",
+      "severity": "high",
+      "field": "PDF.Author",
+      "value": "Juan",
+      "reason": "Campo sensible 'Author' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Programa_de_la_Festa_Majors_d_Olivella_2024_440b53be2f55.pdf",
+      "category": "metadata",
+      "severity": "high",
+      "field": "PDF.Author",
+      "value": "conta",
+      "reason": "Campo sensible 'Author' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf",
+      "category": "metadata",
+      "severity": "high",
+      "field": "PDF.Author",
+      "value": "Josep Raventos",
+      "reason": "Campo sensible 'Author' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/programa_640de8f305fb.pdf",
+      "category": "metadata",
+      "severity": "high",
+      "field": "PDF.Author",
+      "value": "User",
+      "reason": "Campo sensible 'Author' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf",
+      "category": "PII",
+      "severity": "medium",
+      "field": "XMP-xmpMM.DocumentID",
+      "value": "50687924",
+      "reason": "Patrón 'phone' detectado"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf",
+      "category": "PII",
+      "severity": "medium",
+      "field": "XMP-xmpMM.InstanceID",
+      "value": "50687924",
+      "reason": "Patrón 'phone' detectado"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/CARNAVAL_2026_d468e50682be.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "PDF.Creator",
+      "value": "Canva",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Mapa_Olivella_DinA4_07012026_c3408507b98b.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "PDF.Creator",
+      "value": "Adobe InDesign 21.0 (Macintosh)",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Mapa_Olivella_DinA4_07012026_c3408507b98b.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "ICC-header.ProfileCreator",
+      "value": "Adobe Systems Inc.",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/PROGRAMACIO_CC_81_84f63643c23a.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "PDF.Creator",
+      "value": "Canva",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Planol_Olivella_82787d6019db.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "PDF.Creator",
+      "value": "CorelDRAW X8",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Planol_Olivella_82787d6019db.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "ICC-header.ProfileCreator",
+      "value": "Hewlett-Packard",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Programa_de_la_Festa_Majors_d_Olivella_2024_440b53be2f55.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "PDF.Creator",
+      "value": "Microsoft® Publisher para Microsoft 365",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Programa_de_la_Festa_Majors_d_Olivella_2024_440b53be2f55.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "XMP-dc.Creator",
+      "value": "conta",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "PDF.Creator",
+      "value": "Microsoft® Word per al Microsoft 365",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "XMP-dc.Creator",
+      "value": "Josep Raventos",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/programa_640de8f305fb.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "PDF.Creator",
+      "value": "Microsoft® Publisher para Microsoft 365",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/programa_640de8f305fb.pdf",
+      "category": "metadata",
+      "severity": "medium",
+      "field": "XMP-dc.Creator",
+      "value": "User",
+      "reason": "Campo sensible 'Creator' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/20260729_Certificat_Certificat_d_acords_Certificat_d_acord__1__6394b950e07c.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Producer",
+      "value": "; modified using iText 5.0.1_SNAPSHOT (c) 1T3XT BVBA",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/20260729_Certificat_Certificat_d_acords_Certificat_d_acord__1__6394b950e07c.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-pdf.Producer",
+      "value": "; modified using iText 5.0.1_SNAPSHOT (c) 1T3XT BVBA",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/CARNAVAL_2026_d468e50682be.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Producer",
+      "value": "Canva",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/CARNAVAL_2026_d468e50682be.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-pdf.Producer",
+      "value": "Canva",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/CARNAVAL_2026_d468e50682be.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Title",
+      "value": "Cartel Fiesta de Carnaval Moderno Colorido",
+      "reason": "Campo sensible 'Title' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/CARNAVAL_2026_d468e50682be.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-dc.Title",
+      "value": "Cartel Fiesta de Carnaval Moderno Colorido",
+      "reason": "Campo sensible 'Title' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/CARNAVAL_2026_d468e50682be.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Keywords",
+      "value": "DAHAKMfx9Uk, BAGn-BH0F64, 0",
+      "reason": "Campo sensible 'Keywords' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Mapa_Olivella_DinA4_07012026_c3408507b98b.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Producer",
+      "value": "Adobe PDF Library 18.0",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Mapa_Olivella_DinA4_07012026_c3408507b98b.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-pdf.Producer",
+      "value": "Adobe PDF Library 18.0",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Mapa_Olivella_DinA4_07012026_c3408507b98b.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Title",
+      "value": "Esquema Plano Olivella DinA4.indd",
+      "reason": "Campo sensible 'Title' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Mapa_Olivella_DinA4_07012026_c3408507b98b.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-dc.Title",
+      "value": "Esquema Plano Olivella DinA4.indd",
+      "reason": "Campo sensible 'Title' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Mapa_Olivella_DinA4_07012026_c3408507b98b.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-xmp.CreatorTool",
+      "value": "Adobe InDesign 21.0 (Macintosh)",
+      "reason": "Campo sensible 'CreatorTool' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/PROGRAMACIO_CC_81_84f63643c23a.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Producer",
+      "value": "Canva",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/PROGRAMACIO_CC_81_84f63643c23a.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-pdf.Producer",
+      "value": "Canva",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/PROGRAMACIO_CC_81_84f63643c23a.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Title",
+      "value": "Carnaval Olivella 2026",
+      "reason": "Campo sensible 'Title' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/PROGRAMACIO_CC_81_84f63643c23a.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-dc.Title",
+      "value": "Carnaval Olivella 2026",
+      "reason": "Campo sensible 'Title' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/PROGRAMACIO_CC_81_84f63643c23a.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Keywords",
+      "value": "DAGdqxotasU, BABS0xSECuU, 0",
+      "reason": "Campo sensible 'Keywords' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Planol_Olivella_82787d6019db.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Producer",
+      "value": "Corel PDF Engine Version 18.1.0.661",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Planol_Olivella_82787d6019db.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Title",
+      "value": "olivella-plano-2017.cdr",
+      "reason": "Campo sensible 'Title' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Programa_de_la_Festa_Majors_d_Olivella_2024_440b53be2f55.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Producer",
+      "value": "Microsoft® Publisher para Microsoft 365",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Programa_de_la_Festa_Majors_d_Olivella_2024_440b53be2f55.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-pdf.Producer",
+      "value": "Microsoft® Publisher para Microsoft 365",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Programa_de_la_Festa_Majors_d_Olivella_2024_440b53be2f55.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-xmp.CreatorTool",
+      "value": "Microsoft® Publisher para Microsoft 365",
+      "reason": "Campo sensible 'CreatorTool' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Producer",
+      "value": "Microsoft® Word per al Microsoft 365",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-pdf.Producer",
+      "value": "Microsoft® Word per al Microsoft 365",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-xmp.CreatorTool",
+      "value": "Microsoft® Word per al Microsoft 365",
+      "reason": "Campo sensible 'CreatorTool' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/programa_640de8f305fb.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "PDF.Producer",
+      "value": "Microsoft® Publisher para Microsoft 365",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/programa_640de8f305fb.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-pdf.Producer",
+      "value": "Microsoft® Publisher para Microsoft 365",
+      "reason": "Campo sensible 'Producer' presente"
+    },
+    {
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/programa_640de8f305fb.pdf",
+      "category": "metadata",
+      "severity": "low",
+      "field": "XMP-xmp.CreatorTool",
+      "value": "Microsoft® Publisher para Microsoft 365",
+      "reason": "Campo sensible 'CreatorTool' presente"
+    }
+  ],
+  "metadata": [
+    {
+      "url": "https://www.olivella.cat/media/repository/Mapa_Olivella_DinA4_07012026.pdf",
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Mapa_Olivella_DinA4_07012026_c3408507b98b.pdf",
+      "tags": {
+        "SourceFile": "/home/alex/pdf-dork-scanner/results/pdfs/Mapa_Olivella_DinA4_07012026_c3408507b98b.pdf",
+        "ExifTool": {
+          "ExifToolVersion": 12.76
+        },
+        "System": {
+          "FileName": "Mapa_Olivella_DinA4_07012026_c3408507b98b.pdf",
+          "Directory": "/home/alex/pdf-dork-scanner/results/pdfs",
+          "FileSize": "3.7 MB",
+          "FileModifyDate": "2026:10:20 22:15:09+02:00",
+          "FileAccessDate": "2026:10:20 22:15:09+02:00",
+          "FileInodeChangeDate": "2026:10:20 22:15:09+02:00",
+          "FilePermissions": "-rw-rw-r--"
+        },
+        "File": {
+          "FileType": "PDF",
+          "FileTypeExtension": "pdf",
+          "MIMEType": "application/pdf"
+        },
+        "PDF": {
+          "PDFVersion": 1.6,
+          "Linearized": "No",
+          "Language": "es-ES",
+          "PageCount": 1,
+          "CreateDate": "2026:01:07 10:38:25+01:00",
+          "Creator": "Adobe InDesign 21.0 (Macintosh)",
+          "GTS_PDFXVersion": "PDF/X-4",
+          "ModifyDate": "2026:01:07 10:38:46+01:00",
+          "Producer": "Adobe PDF Library 18.0",
+          "Title": "Esquema Plano Olivella DinA4.indd",
+          "Trapped": false
+        },
+        "XMP-x": {
+          "XMPToolkit": "Adobe XMP Core 10.0-c000 25.G.ef72e4e, 2025/06/27-18:54:05        "
+        },
+        "XMP-xmp": {
+          "CreateDate": "2026:01:07 10:38:25+01:00",
+          "MetadataDate": "2026:01:07 10:38:46+01:00",
+          "ModifyDate": "2026:01:07 10:38:46+01:00",
+          "CreatorTool": "Adobe InDesign 21.0 (Macintosh)"
+        },
+        "XMP-xmpMM": {
+          "InstanceID": "uuid:3affa95d-c4e7-b14c-9365-c97d50f892f0",
+          "OriginalDocumentID": "xmp.did:eadbc1b2-5486-4d65-8062-82d979d402ac",
+          "DocumentID": "xmp.id:84376d1a-c382-4c97-ada6-84460bb17bfe",
+          "RenditionClass": "proof:pdf",
+          "VersionID": 1,
+          "DerivedFromInstanceID": "xmp.iid:b8ab497c-29fe-4f85-a1bd-33aa6108b2f3",
+          "DerivedFromDocumentID": "xmp.did:63af241b-1903-43ef-9fbc-6c9a9400ffae",
+          "DerivedFromOriginalDocumentID": "xmp.did:eadbc1b2-5486-4d65-8062-82d979d402ac",
+          "DerivedFromRenditionClass": "default",
+          "HistoryAction": "converted",
+          "HistoryParameters": "from application/x-indesign to application/pdf",
+          "HistorySoftwareAgent": "Adobe InDesign 21.0 (Macintosh)",
+          "HistoryChanged": "/",
+          "HistoryWhen": "2026:01:07 10:38:25+01:00"
+        },
+        "XMP-dc": {
+          "Format": "application/pdf",
+          "Title": "Esquema Plano Olivella DinA4.indd"
+        },
+        "XMP-pdf": {
+          "Producer": "Adobe PDF Library 18.0",
+          "Trapped": false
+        },
+        "XMP-pdfxid": {
+          "GTS_PDFXVersion": "PDF/X-4"
+        },
+        "XMP-pdfx": {
+          "GTS_PDFXVersion": "PDF/X-4"
+        },
+        "ICC-header": {
+          "ProfileCMMType": "Adobe Systems Inc.",
+          "ProfileVersion": "2.1.0",
+          "ProfileClass": "Display Device Profile",
+          "ColorSpaceData": "RGB ",
+          "ProfileConnectionSpace": "XYZ ",
+          "ProfileDateTime": "1999:06:03 00:00:00",
+          "ProfileFileSignature": "acsp",
+          "PrimaryPlatform": "Apple Computer Inc.",
+          "CMMFlags": "Not Embedded, Independent",
+          "DeviceManufacturer": "none",
+          "DeviceModel": "",
+          "DeviceAttributes": "Reflective, Glossy, Positive, Color",
+          "RenderingIntent": "Perceptual",
+          "ConnectionSpaceIlluminant": "0.9642 1 0.82491",
+          "ProfileCreator": "Adobe Systems Inc.",
+          "ProfileID": 0
+        },
+        "ICC_Profile": {
+          "ProfileCopyright": "Copyright 1999 Adobe Systems Incorporated",
+          "ProfileDescription": "Adobe RGB (1998)",
+          "MediaWhitePoint": "0.95045 1 1.08905",
+          "MediaBlackPoint": "0 0 0",
+          "RedTRC": "(Binary data 14 bytes, use -b option to extract)",
+          "GreenTRC": "(Binary data 14 bytes, use -b option to extract)",
+          "BlueTRC": "(Binary data 14 bytes, use -b option to extract)",
+          "RedMatrixColumn": "0.60974 0.31111 0.01947",
+          "GreenMatrixColumn": "0.20528 0.62567 0.06087",
+          "BlueMatrixColumn": "0.14919 0.06322 0.74457"
+        }
+      },
+      "error": null
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/directori/equipaments/deixalleries/calendari_deixalleria_mobil_olivella.pdf",
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf",
+      "tags": {
+        "SourceFile": "/home/alex/pdf-dork-scanner/results/pdfs/calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf",
+        "ExifTool": {
+          "ExifToolVersion": 12.76
+        },
+        "System": {
+          "FileName": "calendari_deixalleria_mobil_olivella_966dbc8edec2.pdf",
+          "Directory": "/home/alex/pdf-dork-scanner/results/pdfs",
+          "FileSize": "251 kB",
+          "FileModifyDate": "2026:10:20 22:15:11+02:00",
+          "FileAccessDate": "2026:10:20 22:15:11+02:00",
+          "FileInodeChangeDate": "2026:10:20 22:15:11+02:00",
+          "FilePermissions": "-rw-rw-r--"
+        },
+        "File": {
+          "FileType": "PDF",
+          "FileTypeExtension": "pdf",
+          "MIMEType": "application/pdf"
+        },
+        "PDF": {
+          "PDFVersion": 1.7,
+          "Linearized": "No",
+          "PageCount": 1,
+          "Language": "es",
+          "TaggedPDF": "Yes",
+          "Author": "Josep Raventos",
+          "Creator": "Microsoft® Word per al Microsoft 365",
+          "CreateDate": "2026:02:20 13:36:48+01:00",
+          "ModifyDate": "2026:02:20 13:36:48+01:00",
+          "Producer": "Microsoft® Word per al Microsoft 365"
+        },
+        "XMP-x": {
+          "XMPToolkit": "3.1-701"
+        },
+        "XMP-pdf": {
+          "Producer": "Microsoft® Word per al Microsoft 365"
+        },
+        "XMP-dc": {
+          "Creator": "Josep Raventos"
+        },
+        "XMP-xmp": {
+          "CreatorTool": "Microsoft® Word per al Microsoft 365",
+          "CreateDate": "2026:02:20 13:36:48+01:00",
+          "ModifyDate": "2026:02:20 13:36:48+01:00"
+        },
+        "XMP-xmpMM": {
+          "DocumentID": "uuid:301D39B9-01C3-464C-B621-10CA50687924",
+          "InstanceID": "uuid:301D39B9-01C3-464C-B621-10CA50687924"
+        }
+      },
+      "error": null
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/municipi/Planol_Olivella.pdf",
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Planol_Olivella_82787d6019db.pdf",
+      "tags": {
+        "SourceFile": "/home/alex/pdf-dork-scanner/results/pdfs/Planol_Olivella_82787d6019db.pdf",
+        "ExifTool": {
+          "ExifToolVersion": 12.76
+        },
+        "System": {
+          "FileName": "Planol_Olivella_82787d6019db.pdf",
+          "Directory": "/home/alex/pdf-dork-scanner/results/pdfs",
+          "FileSize": "8.9 MB",
+          "FileModifyDate": "2026:10:20 22:15:13+02:00",
+          "FileAccessDate": "2026:10:20 22:15:13+02:00",
+          "FileInodeChangeDate": "2026:10:20 22:15:13+02:00",
+          "FilePermissions": "-rw-rw-r--"
+        },
+        "File": {
+          "FileType": "PDF",
+          "FileTypeExtension": "pdf",
+          "MIMEType": "application/pdf"
+        },
+        "PDF": {
+          "PDFVersion": 1.7,
+          "Linearized": "No",
+          "PageCount": 1,
+          "CreateDate": "2018:01:22 15:22:59+01:00",
+          "ModifyDate": "2018:01:22 15:22:59+01:00",
+          "Producer": "Corel PDF Engine Version 18.1.0.661",
+          "Author": "Juan",
+          "Creator": "CorelDRAW X8",
+          "Title": "olivella-plano-2017.cdr"
+        },
+        "ICC-header": {
+          "ProfileCMMType": "Linotronic",
+          "ProfileVersion": "2.1.0",
+          "ProfileClass": "Display Device Profile",
+          "ColorSpaceData": "RGB ",
+          "ProfileConnectionSpace": "XYZ ",
+          "ProfileDateTime": "1998:02:09 06:49:00",
+          "ProfileFileSignature": "acsp",
+          "PrimaryPlatform": "Microsoft Corporation",
+          "CMMFlags": "Not Embedded, Independent",
+          "DeviceManufacturer": "Hewlett-Packard",
+          "DeviceModel": "sRGB",
+          "DeviceAttributes": "Reflective, Glossy, Positive, Color",
+          "RenderingIntent": "Perceptual",
+          "ConnectionSpaceIlluminant": "0.9642 1 0.82491",
+          "ProfileCreator": "Hewlett-Packard",
+          "ProfileID": 0
+        },
+        "ICC_Profile": {
+          "ProfileCopyright": "Copyright (c) 1998 Hewlett-Packard Company",
+          "ProfileDescription": "sRGB IEC61966-2.1",
+          "MediaWhitePoint": "0.95045 1 1.08905",
+          "MediaBlackPoint": "0 0 0",
+          "RedMatrixColumn": "0.43607 0.22249 0.01392",
+          "GreenMatrixColumn": "0.38515 0.71687 0.09708",
+          "BlueMatrixColumn": "0.14307 0.06061 0.7141",
+          "DeviceMfgDesc": "IEC http://www.iec.ch",
+          "DeviceModelDesc": "IEC 61966-2.1 Default RGB colour space - sRGB",
+          "ViewingCondDesc": "Reference Viewing Condition in IEC61966-2.1",
+          "Luminance": "76.03647 80 87.12462",
+          "Technology": "Cathode Ray Tube Display",
+          "RedTRC": "(Binary data 2060 bytes, use -b option to extract)",
+          "GreenTRC": "(Binary data 2060 bytes, use -b option to extract)",
+          "BlueTRC": "(Binary data 2060 bytes, use -b option to extract)"
+        },
+        "ICC-view": {
+          "ViewingCondIlluminant": "19.6445 20.3718 16.8089",
+          "ViewingCondSurround": "3.92889 4.07439 3.36179",
+          "ViewingCondIlluminantType": "D50"
+        },
+        "ICC-meas": {
+          "MeasurementObserver": "CIE 1931",
+          "MeasurementBacking": "0 0 0",
+          "MeasurementGeometry": "Unknown",
+          "MeasurementFlare": "0.999%",
+          "MeasurementIlluminant": "D65"
+        }
+      },
+      "error": null
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/municipi/festes/20260729_Certificat_Certificat_d_acords_Certificat_d_acord__1_.pdf",
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/20260729_Certificat_Certificat_d_acords_Certificat_d_acord__1__6394b950e07c.pdf",
+      "tags": {
+        "SourceFile": "/home/alex/pdf-dork-scanner/results/pdfs/20260729_Certificat_Certificat_d_acords_Certificat_d_acord__1__6394b950e07c.pdf",
+        "ExifTool": {
+          "ExifToolVersion": 12.76
+        },
+        "System": {
+          "FileName": "20260729_Certificat_Certificat_d_acords_Certificat_d_acord__1__6394b950e07c.pdf",
+          "Directory": "/home/alex/pdf-dork-scanner/results/pdfs",
+          "FileSize": "558 kB",
+          "FileModifyDate": "2026:10:20 22:15:14+02:00",
+          "FileAccessDate": "2026:10:20 22:15:14+02:00",
+          "FileInodeChangeDate": "2026:10:20 22:15:14+02:00",
+          "FilePermissions": "-rw-rw-r--"
+        },
+        "File": {
+          "FileType": "PDF",
+          "FileTypeExtension": "pdf",
+          "MIMEType": "application/pdf"
+        },
+        "PDF": {
+          "Linearized": "No",
+          "ModifyDate": "2026:07:29 18:39:48+02:00",
+          "CreateDate": "2026:07:29 18:39:48+02:00",
+          "Producer": "; modified using iText 5.0.1_SNAPSHOT (c) 1T3XT BVBA",
+          "Language": "EN-US",
+          "HasXFA": "No",
+          "TaggedPDF": "Yes",
+          "PDFVersion": 1.5,
+          "PageCount": 3
+        },
+        "XMP-pdfaid": {
+          "Conformance": "A",
+          "Part": 1
+        },
+        "XMP-pdf": {
+          "Producer": "; modified using iText 5.0.1_SNAPSHOT (c) 1T3XT BVBA"
+        },
+        "XMP-xmp": {
+          "CreateDate": "2026:07:29 18:39:48+02:00",
+          "ModifyDate": "2026:07:29 18:39:48+02:00"
+        }
+      },
+      "error": null
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/noticies/2026/CARNAVAL_2026.pdf",
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/CARNAVAL_2026_d468e50682be.pdf",
+      "tags": {
+        "SourceFile": "/home/alex/pdf-dork-scanner/results/pdfs/CARNAVAL_2026_d468e50682be.pdf",
+        "ExifTool": {
+          "ExifToolVersion": 12.76
+        },
+        "System": {
+          "FileName": "CARNAVAL_2026_d468e50682be.pdf",
+          "Directory": "/home/alex/pdf-dork-scanner/results/pdfs",
+          "FileSize": "907 kB",
+          "FileModifyDate": "2026:10:20 22:15:16+02:00",
+          "FileAccessDate": "2026:10:20 22:15:16+02:00",
+          "FileInodeChangeDate": "2026:10:20 22:15:16+02:00",
+          "FilePermissions": "-rw-rw-r--"
+        },
+        "File": {
+          "FileType": "PDF",
+          "FileTypeExtension": "pdf",
+          "MIMEType": "application/pdf"
+        },
+        "PDF": {
+          "Linearized": "No",
+          "PDFVersion": 1.4,
+          "PageCount": 1,
+          "TaggedPDF": "Yes",
+          "Language": "es-ES",
+          "Title": "Cartel Fiesta de Carnaval Moderno Colorido",
+          "Creator": "Canva",
+          "Producer": "Canva",
+          "CreateDate": "2026:02:02 09:18:47+00:00",
+          "ModifyDate": "2026:02:02 09:18:45+00:00",
+          "Keywords": [
+            "DAHAKMfx9Uk",
+            "BAGn-BH0F64",
+            0
+          ],
+          "Author": "ISABEL CANO"
+        },
+        "XMP-dc": {
+          "Language": "es-ES",
+          "Title": "Cartel Fiesta de Carnaval Moderno Colorido",
+          "Title-es-ES": "Cartel Fiesta de Carnaval Moderno Colorido"
+        },
+        "XMP-pdf": {
+          "Producer": "Canva"
+        },
+        "XMP-xmp": {
+          "CreateDate": "2026:02:02 09:18:47.093Z"
+        }
+      },
+      "error": null
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/noticies/2026/PROGRAMACIO%CC%81.pdf",
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/PROGRAMACIO_CC_81_84f63643c23a.pdf",
+      "tags": {
+        "SourceFile": "/home/alex/pdf-dork-scanner/results/pdfs/PROGRAMACIO_CC_81_84f63643c23a.pdf",
+        "ExifTool": {
+          "ExifToolVersion": 12.76
+        },
+        "System": {
+          "FileName": "PROGRAMACIO_CC_81_84f63643c23a.pdf",
+          "Directory": "/home/alex/pdf-dork-scanner/results/pdfs",
+          "FileSize": "14 MB",
+          "FileModifyDate": "2026:10:20 22:15:20+02:00",
+          "FileAccessDate": "2026:10:20 22:15:20+02:00",
+          "FileInodeChangeDate": "2026:10:20 22:15:20+02:00",
+          "FilePermissions": "-rw-rw-r--"
+        },
+        "File": {
+          "FileType": "PDF",
+          "FileTypeExtension": "pdf",
+          "MIMEType": "application/pdf"
+        },
+        "PDF": {
+          "Linearized": "No",
+          "PDFVersion": 1.4,
+          "PageCount": 4,
+          "TaggedPDF": "Yes",
+          "Language": "ca-ES",
+          "Title": "Carnaval Olivella 2026",
+          "Creator": "Canva",
+          "Producer": "Canva",
+          "CreateDate": "2026:02:06 11:06:38+00:00",
+          "ModifyDate": "2026:02:06 11:06:32+00:00",
+          "Keywords": [
+            "DAGdqxotasU",
+            "BABS0xSECuU",
+            0
+          ],
+          "Author": "Màrius Montmany"
+        },
+        "XMP-dc": {
+          "Language": "ca-ES",
+          "Title": "Carnaval Olivella 2026",
+          "Title-ca-ES": "Carnaval Olivella 2026"
+        },
+        "XMP-pdf": {
+          "Producer": "Canva"
+        },
+        "XMP-xmp": {
+          "CreateDate": "2026:02:06 11:06:38.145Z"
+        }
+      },
+      "error": null
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/noticies/2026/programa.pdf",
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/programa_640de8f305fb.pdf",
+      "tags": {
+        "SourceFile": "/home/alex/pdf-dork-scanner/results/pdfs/programa_640de8f305fb.pdf",
+        "ExifTool": {
+          "ExifToolVersion": 12.76
+        },
+        "System": {
+          "FileName": "programa_640de8f305fb.pdf",
+          "Directory": "/home/alex/pdf-dork-scanner/results/pdfs",
+          "FileSize": "3.9 MB",
+          "FileModifyDate": "2026:10:20 22:15:22+02:00",
+          "FileAccessDate": "2026:10:20 22:15:22+02:00",
+          "FileInodeChangeDate": "2026:10:20 22:15:22+02:00",
+          "FilePermissions": "-rw-rw-r--"
+        },
+        "File": {
+          "FileType": "PDF",
+          "FileTypeExtension": "pdf",
+          "MIMEType": "application/pdf"
+        },
+        "PDF": {
+          "PDFVersion": 1.7,
+          "Linearized": "No",
+          "PageCount": 8,
+          "Language": "es",
+          "TaggedPDF": "Yes",
+          "Author": "User",
+          "CreateDate": "2026:07:09 15:33:45+02:00",
+          "ModifyDate": "2026:07:09 15:33:45+02:00",
+          "Producer": "Microsoft® Publisher para Microsoft 365",
+          "Creator": "Microsoft® Publisher para Microsoft 365"
+        },
+        "XMP-x": {
+          "XMPToolkit": "3.1-701"
+        },
+        "XMP-pdf": {
+          "Producer": "Microsoft® Publisher para Microsoft 365"
+        },
+        "XMP-dc": {
+          "Creator": "User"
+        },
+        "XMP-xmp": {
+          "CreatorTool": "Microsoft® Publisher para Microsoft 365",
+          "CreateDate": "2026:07:09 15:33:45+02:00",
+          "ModifyDate": "2026:07:09 15:33:45+02:00"
+        },
+        "XMP-xmpMM": {
+          "DocumentID": "uuid:FE5CB60B-F6D3-426F-B66B-608F4E4F65E3",
+          "InstanceID": "uuid:FE5CB60B-F6D3-426F-B66B-608F4E4F65E3"
+        }
+      },
+      "error": null
+    },
+    {
+      "url": "https://www.olivella.cat/media/repository/noticies/Juliol_2024/Programa_de_la_Festa_Majors_d_Olivella_2024.pdf",
+      "file": "/home/alex/pdf-dork-scanner/results/pdfs/Programa_de_la_Festa_Majors_d_Olivella_2024_440b53be2f55.pdf",
+      "tags": {
+        "SourceFile": "/home/alex/pdf-dork-scanner/results/pdfs/Programa_de_la_Festa_Majors_d_Olivella_2024_440b53be2f55.pdf",
+        "ExifTool": {
+          "ExifToolVersion": 12.76
+        },
+        "System": {
+          "FileName": "Programa_de_la_Festa_Majors_d_Olivella_2024_440b53be2f55.pdf",
+          "Directory": "/home/alex/pdf-dork-scanner/results/pdfs",
+          "FileSize": "4.9 MB",
+          "FileModifyDate": "2026:10:20 22:15:25+02:00",
+          "FileAccessDate": "2026:10:20 22:15:25+02:00",
+          "FileInodeChangeDate": "2026:10:20 22:15:25+02:00",
+          "FilePermissions": "-rw-rw-r--"
+        },
+        "File": {
+          "FileType": "PDF",
+          "FileTypeExtension": "pdf",
+          "MIMEType": "application/pdf"
+        },
+        "PDF": {
+          "PDFVersion": 1.7,
+          "Linearized": "No",
+          "PageCount": 8,
+          "Language": "ca",
+          "TaggedPDF": "Yes",
+          "Author": "conta",
+          "CreateDate": "2024:07:08 20:38:06+02:00",
+          "ModifyDate": "2024:07:08 20:38:06+02:00",
+          "Producer": "Microsoft® Publisher para Microsoft 365",
+          "Creator": "Microsoft® Publisher para Microsoft 365"
+        },
+        "XMP-x": {
+          "XMPToolkit": "3.1-701"
+        },
+        "XMP-pdf": {
+          "Producer": "Microsoft® Publisher para Microsoft 365"
+        },
+        "XMP-dc": {
+          "Creator": "conta"
+        },
+        "XMP-xmp": {
+          "CreatorTool": "Microsoft® Publisher para Microsoft 365",
+          "CreateDate": "2024:07:08 20:38:06+02:00",
+          "ModifyDate": "2024:07:08 20:38:06+02:00"
+        },
+        "XMP-xmpMM": {
+          "DocumentID": "uuid:1D04153F-1D4F-4AB3-9513-20C5FF0CB8A0",
+          "InstanceID": "uuid:1D04153F-1D4F-4AB3-9513-20C5FF0CB8A0"
+        }
+      },
+      "error": null
+    }
+  ]
+}
