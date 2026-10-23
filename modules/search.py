@@ -1,5 +1,6 @@
 """Búsqueda de PDFs asociados a un dominio mediante motores de búsqueda."""
 
+import base64
 import re
 import time
 import urllib.parse
@@ -37,6 +38,25 @@ def _normalize_url(u: str) -> Optional[str]:
     return u.split("#")[0]
 
 
+def _decode_bing_redirect(href: str) -> str:
+    """Bing envuelve los resultados en /ck/a?...&u=a1<base64>."""
+    if "bing.com/ck/a" not in href:
+        return href
+    qs = urllib.parse.parse_qs(urllib.parse.urlparse(href).query)
+    encoded = qs.get("u", [None])[0]
+    if not encoded:
+        return href
+    if encoded.startswith("a1"):
+        encoded = encoded[2:]
+    encoded = encoded.replace("-", "+").replace("_", "/")
+    encoded += "=" * (-len(encoded) % 4)
+    try:
+        decoded = base64.urlsafe_b64decode(encoded).decode("utf-8")
+    except Exception:
+        return href
+    return decoded if decoded.startswith("http") else href
+
+
 def _is_pdf_url(u: str) -> bool:
     p = urllib.parse.urlparse(u).path.lower()
     return p.endswith(".pdf") or ".pdf" in p
@@ -54,6 +74,9 @@ def search_google(domain: str, max_results: int = 50, delay: float = 1.0) -> Set
         except Exception:
             break
         if r.status_code != 200:
+            break
+        if "enablejs" in r.text or "consent.google.com" in r.text:
+            print("[!] Google requiere JavaScript/consentimiento; se omite este motor.")
             break
         soup = BeautifulSoup(r.text, "lxml")
         found_this_page = 0
@@ -87,7 +110,7 @@ def search_bing(domain: str, max_results: int = 50, delay: float = 1.0) -> Set[s
         soup = BeautifulSoup(r.text, "lxml")
         found_this_page = 0
         for a in soup.select("li.b_algo h2 a, a[href]"):
-            href = a.get("href", "")
+            href = _decode_bing_redirect(a.get("href", ""))
             if not href.startswith("http"):
                 continue
             if _is_pdf_url(href) and domain in urllib.parse.urlparse(href).netloc:
@@ -128,15 +151,79 @@ def search_duckduckgo(domain: str, max_results: int = 50, delay: float = 1.0) ->
     return urls
 
 
+def search_wayback(domain: str, max_results: int = 50, delay: float = 1.0) -> Set[str]:
+    """Respaldo: descubre PDFs archivados por Wayback CDX.
+
+    Sirve cuando Google/Bing/DDG devuelven CAPTCHA, JavaScript o resultados
+    vacíos. No sustituye a un buscador, pero encuentra URLs PDF del dominio.
+    """
+    urls: Set[str] = set()
+    from_year = int(time.strftime("%Y")) - 2
+    params = {
+        "url": f"{domain}/*",
+        "output": "json",
+        "filter": "urlkey:.*pdf.*",
+        "collapse": "urlkey",
+        "fl": "original,timestamp,statuscode,mimetype",
+        "limit": str(max(100, max_results * 5)),
+        "from": str(from_year),
+    }
+    headers = {"User-Agent": DEFAULT_UA}
+    try:
+        r = requests.get(
+            "https://web.archive.org/cdx/search/cdx",
+            params=params,
+            headers=headers,
+            timeout=40,
+        )
+    except Exception as e:
+        print(f"[!] Wayback CDX: {e}")
+        return urls
+    if r.status_code != 200:
+        print(f"[!] Wayback CDX: HTTP {r.status_code}")
+        return urls
+    try:
+        rows = r.json()
+    except Exception as e:
+        print(f"[!] Wayback CDX: respuesta no JSON ({e})")
+        return urls
+    if not rows:
+        return urls
+
+    parsed = []
+    for row in rows[1:]:
+        if len(row) < 4:
+            continue
+        original, timestamp, status, mimetype = row[:4]
+        p = urllib.parse.urlparse(original)
+        if domain not in p.netloc:
+            continue
+        if not p.path.lower().endswith(".pdf"):
+            continue
+        if status not in ("200", "-", ""):
+            continue
+        parsed.append((timestamp or "", original.split("#")[0]))
+
+    # Quedarse con las capturas más recientes.
+    parsed.sort(key=lambda x: x[0], reverse=True)
+    for _, original in parsed:
+        urls.add(original)
+        if len(urls) >= max_results:
+            break
+    return urls
+
+
 ENGINES = {
     "google": search_google,
     "bing": search_bing,
     "duckduckgo": search_duckduckgo,
+    "wayback": search_wayback,
 }
 
 
 def search_all(domain: str, engines: List[str], max_results: int = 50, delay: float = 1.0) -> Set[str]:
     out: Set[str] = set()
+    requested = {e.strip().lower() for e in engines}
     for eng in engines:
         fn = ENGINES.get(eng.lower())
         if not fn:
@@ -146,4 +233,12 @@ def search_all(domain: str, engines: List[str], max_results: int = 50, delay: fl
             out |= res
         except Exception as e:
             print(f"[!] Error en {eng}: {e}")
+
+    # Si los buscadores están bloqueados o no devuelven nada, usar el archivo.
+    if not out and "wayback" not in requested:
+        print("[*] Sin resultados en los motores; probando Wayback CDX como respaldo...")
+        try:
+            out |= search_wayback(domain, max_results=max_results, delay=delay)
+        except Exception as e:
+            print(f"[!] Error en Wayback CDX: {e}")
     return out

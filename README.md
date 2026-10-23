@@ -36,6 +36,10 @@ Solo algunos motores:
 
     python3 scanner.py example.com --engines google,bing --max-results 30
 
+Usar solo el archivo Wayback (util si los buscadores bloquean):
+
+    python3 scanner.py example.com --engines wayback --max-results 30
+
 Analizar tambien el texto del PDF:
 
     python3 scanner.py example.com --analyze-text
@@ -64,7 +68,9 @@ En el directorio de salida:
 ## Como funciona
 
 1. Busqueda. Usa dorks del tipo `site:dominio filetype:pdf` contra Google,
-   con respaldo en Bing y DuckDuckGo por si Google bloquea con CAPTCHA.
+   con respaldo en Bing y DuckDuckGo. Si los tres devuelven CAPTCHA, exigen
+   JavaScript o no dan resultados, usa Wayback CDX para descubrir PDFs
+   archivados del dominio.
 2. Descarga. Valida que el archivo sea un PDF real (cabecera %PDF), limita
    el tamano y sanea los nombres de archivo.
 3. Metadatos. Ejecuta exiftool con salida JSON y aplana los grupos.
